@@ -5,8 +5,8 @@ nap123
     :target: https://pypi.python.org/pypi/nap123
     :alt: Latest PyPI version
 
-.. image:: https://travis-ci.org/gcamargo1/cookiecutter-pypackage-minimal.png
-   :target: https://travis-ci.org/gcamargo1/cookiecutter-pypackage-minimal
+.. image:: https://travis-ci.org/gcamargo1/nap123.png
+   :target: https://travis-ci.org/gcamargo1/nap123
    :alt: Latest Travis CI build status
 
 a test pack
