@@ -24,6 +24,7 @@ sphinx-quickstart
 # extensions = ["sphinxcontrib.napoleon"] in conf.py
 $ sys.path.insert(0, os.path.abspath("..")) in conf.py
 
+#################################################################################
 #index.rst
 Welcome to nap123's documentation!
 ==================================
@@ -43,7 +44,7 @@ Indices and tables
 * :ref:`search`
 
 .. note:: This is a **note** box.
-
+#################################################################################
 
 Run `sphinx-apidoc -f -o docs/source nap123` when new modules were generated
 make html
@@ -61,7 +62,8 @@ github:
 
 # Publish to read the docs
 - login using github
-add .readthedocs.yml to root dir
+add .readthedocs.yml to root dir:
+#################################################################################
 # .readthedocs.yml
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
@@ -85,7 +87,10 @@ formats:
 python:
   version: 3.7
   install:
-    - requirements: requirements.txt
+    - requirements: docs/requirements.txt  # docs requirements
 
+#################################################################################
 - Add requirements.txt to root dir
-- add sphinxcontrib-napoleon to requirements.txt
+- add sphinxcontrib-napoleon to requirements.txt  # docs requirements
+- Configure Admin in readthedocs website, advanced settings, default branch to main
+
