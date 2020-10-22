@@ -1,0 +1,37 @@
+nap123 package
+==============
+
+Submodules
+----------
+
+nap123.main module
+------------------
+
+.. automodule:: nap123.main
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nap123.new\_mod1 module
+-----------------------
+
+.. automodule:: nap123.new_mod1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+nap123.new\_module module
+-------------------------
+
+.. automodule:: nap123.new_module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: nap123
+   :members:
+   :undoc-members:
+   :show-inheritance:

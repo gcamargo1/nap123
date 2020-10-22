@@ -1,0 +1,51 @@
+mkdir nap123
+cd nap123/
+https://github.com/
+# create nap123 rep
+rm README.md
+brew install cookiecutter
+git clone https://github.com/kragniz/cookiecutter-pypackage-minimal.git
+cookiecutter cookiecutter-pypackage-minimal/
+# fill out the questions
+Rearrange folders with files created by cookie cutter
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:gcamargo1/nap123.git
+git push -u origin main
+# write a function with docs
+https://sphinxcontrib-napoleon.readthedocs.io/en/latest/
+pip install sphinxcontrib-napoleon
+mkdir docs
+cd docs
+conda install sphinx
+sphinx-quickstart
+# extensions = ["sphinxcontrib.napoleon"] in conf.py
+$ sys.path.insert(0, os.path.abspath("..")) in conf.py
+
+#index.rst
+Welcome to nap123's documentation!
+==================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   source/modules
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+.. note:: This is a **note** box.
+
+
+Run `sphinx-apidoc -f -o docs/source nap123` when new modules were generated
+make html
+
+
