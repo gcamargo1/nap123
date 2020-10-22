@@ -48,4 +48,44 @@ Indices and tables
 Run `sphinx-apidoc -f -o docs/source nap123` when new modules were generated
 make html
 
+# put docs on github
+touch .nojekyll # inside docs folder
 
+# Publish on github
+- add this to Makefile
+github:
+	@make html
+	@cp -a _build/html/. ../docs
+- folder "docs" is dedicated for the webpage, no room for customizing
+- add a empty file .nojekyll to /docs folder
+
+# Publish to read the docs
+- login using github
+add .readthedocs.yml to root dir
+# .readthedocs.yml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Build documentation in the docs/ directory with Sphinx
+sphinx:
+  configuration: docs_sphix/conf.py
+
+# Build documentation with MkDocs
+#mkdocs:
+#  configuration: mkdocs.yml
+
+# Optionally build your docs in additional formats such as PDF
+formats:
+  - pdf
+
+# Optionally set the version of Python and requirements required to build your docs
+python:
+  version: 3.7
+  install:
+    - requirements: requirements.txt
+
+- Add requirements.txt to root dir
+- add sphinxcontrib-napoleon to requirements.txt
