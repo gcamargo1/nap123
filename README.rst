@@ -29,4 +29,4 @@ Licence
 Authors
 -------
 
-`nap123` was written by `Gustavo Camargo <gustavo.camargo@bayer.com>`_.
+`nap123` was written by `Gustavo Camargo`_.
